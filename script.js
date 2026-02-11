@@ -39,4 +39,4 @@ clearBtn.addEventListener('click', () => {
     document.querySelectorAll('.card').forEach((card) => {
         card.remove();
     });
-});
+});git push -u origin main
