@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const categoryInput = document.getElementById("category");
     const descriptionInput = document.getElementById("description");
 
+    const keyText = document.querySelector('.keyText');
+    const codeText = document.querySelector('.codeText');
+
     function createCard(title, date, category, description) {
 
         const card = document.createElement('div');
@@ -17,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         card.innerHTML = `
             <h3>${title}</h3>
-            <p>${date}</p>
+            <p>Date: ${date}</p>
             <button>${category}</button>
             <p>${description}</p>
-            <div class="dlt">x</div>
+            <div class="dlt">X</div>
         `;
 
         eventCards.appendChild(card);
@@ -30,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Add Event
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -48,39 +50,36 @@ document.addEventListener("DOMContentLoaded", function () {
         form.reset();
     });
 
-    // Clear All
     clearBtn.addEventListener('click', function () {
         eventCards.innerHTML = "";
     });
 
-    // Add Sample Events
     sampleBtn.addEventListener('click', function () {
 
-        const samples = [
+        const sampleEvents = [
             {
-                title: "AI Conference",
-                date: "2026-06-10",
-                category: "Conference",
-                description: "Conference about Artificial Intelligence."
+                title: "HACKKRMU",
+                date: "2026-02-18",
+                category: "HACKATHON",
+                description: "Built using HTML, CSS, JS."
             },
             {
-                title: "Frontend Workshop",
-                date: "2026-07-15",
-                category: "Workshop",
-                description: "Hands-on HTML CSS JS training."
-            },
-            {
-                title: "Startup Meetup",
-                date: "2026-08-20",
+                title: "HELLO WORLD",
+                date: "2026-02-19",
                 category: "Meetup",
-                description: "Networking for developers."
+                description: "Smart dashboard 2026"
             }
         ];
 
-        samples.forEach(event => {
+        sampleEvents.forEach(event => {
             createCard(event.title, event.date, event.category, event.description);
         });
 
+    });
+
+    document.addEventListener('keydown', function (e) {
+        keyText.textContent = e.key;
+        
     });
 
 });

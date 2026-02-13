@@ -13,8 +13,10 @@
 
     <div class="container">
 
+        <!-- LEFT PANEL -->
         <div class="event-form">
             <form class="form">
+
                 <label>Event Title</label>
                 <input type="text" id="eventTitle" required>
 
@@ -34,18 +36,29 @@
                 <textarea id="description"></textarea>
 
                 <input type="submit" value="Add Event">
+
             </form>
         </div>
 
+        <!-- RIGHT PANEL -->
         <div class="events">
+
             <div class="btn-group">
                 <button class="clearAll">Clear All Events</button>
                 <button class="sample">Add Sample Events</button>
             </div>
 
             <div class="cards"></div>
+
         </div>
 
+    </div>
+
+    <!-- 🔥 FULL WIDTH KEY DISPLAY -->
+    <div class="key-display">
+        <h3>You pressed:</h3>
+        <p class="keyText"></p>
+        <p class="codeText"></p>
     </div>
 
     <script src="script.js"></script>
