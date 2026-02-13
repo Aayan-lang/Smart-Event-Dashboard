@@ -1,4 +1,6 @@
 # Smart-Event-Dashboard
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2d5ef6dd-7556-4ba4-99c7-c673aa05d6c4" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/be628ed4-6371-42a2-b225-24ec52dbbc5d" />
 
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d7b4c01f-ada7-449b-8dff-84146a5ef698" />
